@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7230D7541E05E8C70001F3E9 /* GeneralPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7230D7521E05E8C70001F3E9 /* GeneralPreferencesViewController.swift */; };
+		7230D7551E05E8C70001F3E9 /* GeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7230D7531E05E8C70001F3E9 /* GeneralPreferencesViewController.xib */; };
+		7230D7591E05F4960001F3E9 /* CreditsPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7230D7571E05F4960001F3E9 /* CreditsPreferencesViewController.swift */; };
+		7230D75A1E05F4960001F3E9 /* CreditsPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7230D7581E05F4960001F3E9 /* CreditsPreferencesViewController.xib */; };
+		725AA5C01E05BF3A006E5DDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725AA5BF1E05BF3A006E5DDE /* AppDelegate.swift */; };
+		725AA5C21E05BF3A006E5DDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 725AA5C11E05BF3A006E5DDE /* Assets.xcassets */; };
+		725AA5C51E05BF3A006E5DDE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725AA5C31E05BF3A006E5DDE /* MainMenu.xib */; };
+		725AA5CE1E05C098006E5DDE /* PowerSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725AA5CD1E05C098006E5DDE /* PowerSource.swift */; };
+		725AA5D01E05C0E8006E5DDE /* PowerSourceWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725AA5CF1E05C0E8006E5DDE /* PowerSourceWatcher.swift */; };
+		725AA5D31E05C19A006E5DDE /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725AA5D21E05C19A006E5DDE /* ApplicationCoordinator.swift */; };
+		725AA5D51E05C1F5006E5DDE /* StatusBarItemCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725AA5D41E05C1F5006E5DDE /* StatusBarItemCoordinator.swift */; };
+		725AA5DD1E05D3CD006E5DDE /* StatusItemMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725AA5DC1E05D3CD006E5DDE /* StatusItemMenu.swift */; };
+		725AA5E01E05DBDB006E5DDE /* PreferencesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725AA5DF1E05DBDB006E5DDE /* PreferencesCoordinator.swift */; };
+		725AA5E51E05DE22006E5DDE /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725AA5E31E05DE22006E5DDE /* PreferencesWindowController.swift */; };
+		725AA5E61E05DE22006E5DDE /* PreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725AA5E41E05DE22006E5DDE /* PreferencesWindowController.xib */; };
+		728EB92E1E0601D800920B83 /* ChargeScaleDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EB92D1E0601D800920B83 /* ChargeScaleDisplay.swift */; };
+		728EB9311E06033300920B83 /* PowerSource+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EB9301E06033300920B83 /* PowerSource+Extensions.swift */; };
+		728EB9341E0605CB00920B83 /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EB9331E0605CB00920B83 /* FileManager+Extensions.swift */; };
+		728EB9361E060DA900920B83 /* FileBackedChargeScaleDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EB9351E060DA900920B83 /* FileBackedChargeScaleDisplay.swift */; };
+		728EB9381E06184000920B83 /* FileBackedChargeScaleDisplay+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EB9371E06184000920B83 /* FileBackedChargeScaleDisplay+Extensions.swift */; };
+		728EB93A1E061B4700920B83 /* PreferencesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EB9391E061B4700920B83 /* PreferencesStorage.swift */; };
+		728EB9431E06661800920B83 /* AboutPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EB9411E06661800920B83 /* AboutPreferencesViewController.swift */; };
+		728EB9441E06661800920B83 /* AboutPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 728EB9421E06661800920B83 /* AboutPreferencesViewController.xib */; };
+		72DA735D1E09FE19003F9262 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA735C1E09FE19003F9262 /* AppDelegate.swift */; };
+		72DA735F1E09FE19003F9262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72DA735E1E09FE19003F9262 /* Assets.xcassets */; };
+		72DA73621E09FE19003F9262 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72DA73601E09FE19003F9262 /* MainMenu.xib */; };
+		72DA73691E09FED9003F9262 /* StartOnLaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA73681E09FED9003F9262 /* StartOnLaunchController.swift */; };
+		72DA736A1E09FED9003F9262 /* StartOnLaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA73681E09FED9003F9262 /* StartOnLaunchController.swift */; };
+		72DA736C1E09FF2E003F9262 /* JuiceHelper.app in Copy JuiceHelper */ = {isa = PBXBuildFile; fileRef = 72DA735A1E09FE19003F9262 /* JuiceHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BB1E603B06F7547FED9412FB /* Pods_Juice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89FE5472659FE380046C1766 /* Pods_Juice.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		72DA736B1E09FF0B003F9262 /* Copy JuiceHelper */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				72DA736C1E09FF2E003F9262 /* JuiceHelper.app in Copy JuiceHelper */,
+			);
+			name = "Copy JuiceHelper";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3C77461788BEC6533AC87A19 /* Pods-Juice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Juice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Juice/Pods-Juice.debug.xcconfig"; sourceTree = "<group>"; };
+		7230D7521E05E8C70001F3E9 /* GeneralPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneralPreferencesViewController.swift; path = Classes/GeneralPreferencesViewController.swift; sourceTree = "<group>"; };
+		7230D7531E05E8C70001F3E9 /* GeneralPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GeneralPreferencesViewController.xib; path = Classes/GeneralPreferencesViewController.xib; sourceTree = "<group>"; };
+		7230D7571E05F4960001F3E9 /* CreditsPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditsPreferencesViewController.swift; path = Classes/CreditsPreferencesViewController.swift; sourceTree = "<group>"; };
+		7230D7581E05F4960001F3E9 /* CreditsPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreditsPreferencesViewController.xib; path = Classes/CreditsPreferencesViewController.xib; sourceTree = "<group>"; };
+		725AA5BC1E05BF3A006E5DDE /* Juice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Juice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		725AA5BF1E05BF3A006E5DDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		725AA5C11E05BF3A006E5DDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		725AA5C41E05BF3A006E5DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		725AA5C61E05BF3A006E5DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		725AA5CD1E05C098006E5DDE /* PowerSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PowerSource.swift; path = Classes/PowerSource.swift; sourceTree = "<group>"; };
+		725AA5CF1E05C0E8006E5DDE /* PowerSourceWatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PowerSourceWatcher.swift; path = Classes/PowerSourceWatcher.swift; sourceTree = "<group>"; };
+		725AA5D21E05C19A006E5DDE /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApplicationCoordinator.swift; path = Classes/ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		725AA5D41E05C1F5006E5DDE /* StatusBarItemCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusBarItemCoordinator.swift; path = Classes/StatusBarItemCoordinator.swift; sourceTree = "<group>"; };
+		725AA5DC1E05D3CD006E5DDE /* StatusItemMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusItemMenu.swift; path = Classes/StatusItemMenu.swift; sourceTree = "<group>"; };
+		725AA5DF1E05DBDB006E5DDE /* PreferencesCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreferencesCoordinator.swift; path = Classes/PreferencesCoordinator.swift; sourceTree = "<group>"; };
+		725AA5E31E05DE22006E5DDE /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreferencesWindowController.swift; path = Classes/PreferencesWindowController.swift; sourceTree = "<group>"; };
+		725AA5E41E05DE22006E5DDE /* PreferencesWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PreferencesWindowController.xib; path = Classes/PreferencesWindowController.xib; sourceTree = "<group>"; };
+		728EB92D1E0601D800920B83 /* ChargeScaleDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChargeScaleDisplay.swift; path = Classes/ChargeScaleDisplay.swift; sourceTree = "<group>"; };
+		728EB9301E06033300920B83 /* PowerSource+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PowerSource+Extensions.swift"; path = "Classes/PowerSource+Extensions.swift"; sourceTree = "<group>"; };
+		728EB9321E0604D400920B83 /* Juice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Juice.entitlements; sourceTree = "<group>"; };
+		728EB9331E0605CB00920B83 /* FileManager+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FileManager+Extensions.swift"; path = "Classes/FileManager+Extensions.swift"; sourceTree = "<group>"; };
+		728EB9351E060DA900920B83 /* FileBackedChargeScaleDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileBackedChargeScaleDisplay.swift; path = Classes/FileBackedChargeScaleDisplay.swift; sourceTree = "<group>"; };
+		728EB9371E06184000920B83 /* FileBackedChargeScaleDisplay+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FileBackedChargeScaleDisplay+Extensions.swift"; path = "Classes/FileBackedChargeScaleDisplay+Extensions.swift"; sourceTree = "<group>"; };
+		728EB9391E061B4700920B83 /* PreferencesStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreferencesStorage.swift; path = Classes/PreferencesStorage.swift; sourceTree = "<group>"; };
+		728EB9411E06661800920B83 /* AboutPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutPreferencesViewController.swift; path = Classes/AboutPreferencesViewController.swift; sourceTree = "<group>"; };
+		728EB9421E06661800920B83 /* AboutPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutPreferencesViewController.xib; path = Classes/AboutPreferencesViewController.xib; sourceTree = "<group>"; };
+		72DA735A1E09FE19003F9262 /* JuiceHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuiceHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72DA735C1E09FE19003F9262 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72DA735E1E09FE19003F9262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72DA73611E09FE19003F9262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		72DA73631E09FE19003F9262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72DA73681E09FED9003F9262 /* StartOnLaunchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartOnLaunchController.swift; path = Juice/Classes/StartOnLaunchController.swift; sourceTree = "<group>"; };
+		72DA736D1E09FF45003F9262 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		72DAC54A1E0A0A050036E3BF /* JuiceHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JuiceHelper.entitlements; sourceTree = "<group>"; };
+		77622EE75A5C033BF8EAACB4 /* Pods-Juice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Juice.release.xcconfig"; path = "Pods/Target Support Files/Pods-Juice/Pods-Juice.release.xcconfig"; sourceTree = "<group>"; };
+		89FE5472659FE380046C1766 /* Pods_Juice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Juice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		725AA5B91E05BF3A006E5DDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1E603B06F7547FED9412FB /* Pods_Juice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72DA73571E09FE19003F9262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7230D7511E05E8A60001F3E9 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				7230D7521E05E8C70001F3E9 /* GeneralPreferencesViewController.swift */,
+				7230D7531E05E8C70001F3E9 /* GeneralPreferencesViewController.xib */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		7230D7561E05F47D0001F3E9 /* Credits */ = {
+			isa = PBXGroup;
+			children = (
+				7230D7571E05F4960001F3E9 /* CreditsPreferencesViewController.swift */,
+				7230D7581E05F4960001F3E9 /* CreditsPreferencesViewController.xib */,
+			);
+			name = Credits;
+			sourceTree = "<group>";
+		};
+		725AA5B31E05BF3A006E5DDE = {
+			isa = PBXGroup;
+			children = (
+				72DA73671E09FEA7003F9262 /* Shared */,
+				725AA5BE1E05BF3A006E5DDE /* Juice */,
+				72DA735B1E09FE19003F9262 /* JuiceHelper */,
+				725AA5BD1E05BF3A006E5DDE /* Products */,
+				A49489D7401DD5FE5654CC8B /* Pods */,
+				F424A84904A6C0FD21B47862 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		725AA5BD1E05BF3A006E5DDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				725AA5BC1E05BF3A006E5DDE /* Juice.app */,
+				72DA735A1E09FE19003F9262 /* JuiceHelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		725AA5BE1E05BF3A006E5DDE /* Juice */ = {
+			isa = PBXGroup;
+			children = (
+				728EB9321E0604D400920B83 /* Juice.entitlements */,
+				728EB92F1E06032600920B83 /* Extensions */,
+				728EB92C1E0601A700920B83 /* Display String Parsing */,
+				725AA5DE1E05DBCD006E5DDE /* Preferences */,
+				725AA5D11E05C18A006E5DDE /* Main Application Hierarchy */,
+				725AA5CC1E05C083006E5DDE /* Power Source */,
+				725AA5BF1E05BF3A006E5DDE /* AppDelegate.swift */,
+				725AA5C11E05BF3A006E5DDE /* Assets.xcassets */,
+				725AA5C31E05BF3A006E5DDE /* MainMenu.xib */,
+				725AA5C61E05BF3A006E5DDE /* Info.plist */,
+			);
+			path = Juice;
+			sourceTree = "<group>";
+		};
+		725AA5CC1E05C083006E5DDE /* Power Source */ = {
+			isa = PBXGroup;
+			children = (
+				725AA5CD1E05C098006E5DDE /* PowerSource.swift */,
+				725AA5CF1E05C0E8006E5DDE /* PowerSourceWatcher.swift */,
+			);
+			name = "Power Source";
+			sourceTree = "<group>";
+		};
+		725AA5D11E05C18A006E5DDE /* Main Application Hierarchy */ = {
+			isa = PBXGroup;
+			children = (
+				725AA5DB1E05D3BA006E5DDE /* Status Item */,
+				725AA5D21E05C19A006E5DDE /* ApplicationCoordinator.swift */,
+			);
+			name = "Main Application Hierarchy";
+			sourceTree = "<group>";
+		};
+		725AA5DB1E05D3BA006E5DDE /* Status Item */ = {
+			isa = PBXGroup;
+			children = (
+				725AA5D41E05C1F5006E5DDE /* StatusBarItemCoordinator.swift */,
+				725AA5DC1E05D3CD006E5DDE /* StatusItemMenu.swift */,
+			);
+			name = "Status Item";
+			sourceTree = "<group>";
+		};
+		725AA5DE1E05DBCD006E5DDE /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				728EB9401E06660300920B83 /* About */,
+				7230D7561E05F47D0001F3E9 /* Credits */,
+				7230D7511E05E8A60001F3E9 /* General */,
+				725AA5DF1E05DBDB006E5DDE /* PreferencesCoordinator.swift */,
+				725AA5E31E05DE22006E5DDE /* PreferencesWindowController.swift */,
+				725AA5E41E05DE22006E5DDE /* PreferencesWindowController.xib */,
+				728EB9391E061B4700920B83 /* PreferencesStorage.swift */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		728EB92C1E0601A700920B83 /* Display String Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				728EB92D1E0601D800920B83 /* ChargeScaleDisplay.swift */,
+				728EB9351E060DA900920B83 /* FileBackedChargeScaleDisplay.swift */,
+				728EB9371E06184000920B83 /* FileBackedChargeScaleDisplay+Extensions.swift */,
+			);
+			name = "Display String Parsing";
+			sourceTree = "<group>";
+		};
+		728EB92F1E06032600920B83 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				728EB9301E06033300920B83 /* PowerSource+Extensions.swift */,
+				728EB9331E0605CB00920B83 /* FileManager+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		728EB9401E06660300920B83 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				728EB9411E06661800920B83 /* AboutPreferencesViewController.swift */,
+				728EB9421E06661800920B83 /* AboutPreferencesViewController.xib */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		72DA735B1E09FE19003F9262 /* JuiceHelper */ = {
+			isa = PBXGroup;
+			children = (
+				72DAC54A1E0A0A050036E3BF /* JuiceHelper.entitlements */,
+				72DA735C1E09FE19003F9262 /* AppDelegate.swift */,
+				72DA735E1E09FE19003F9262 /* Assets.xcassets */,
+				72DA73601E09FE19003F9262 /* MainMenu.xib */,
+				72DA73631E09FE19003F9262 /* Info.plist */,
+			);
+			path = JuiceHelper;
+			sourceTree = "<group>";
+		};
+		72DA73671E09FEA7003F9262 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				72DA73681E09FED9003F9262 /* StartOnLaunchController.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		A49489D7401DD5FE5654CC8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C77461788BEC6533AC87A19 /* Pods-Juice.debug.xcconfig */,
+				77622EE75A5C033BF8EAACB4 /* Pods-Juice.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F424A84904A6C0FD21B47862 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72DA736D1E09FF45003F9262 /* ServiceManagement.framework */,
+				89FE5472659FE380046C1766 /* Pods_Juice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		725AA5BB1E05BF3A006E5DDE /* Juice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 725AA5C91E05BF3A006E5DDE /* Build configuration list for PBXNativeTarget "Juice" */;
+			buildPhases = (
+				4C5858939BBC9D8F822F925E /* [CP] Check Pods Manifest.lock */,
+				725AA5B81E05BF3A006E5DDE /* Sources */,
+				725AA5B91E05BF3A006E5DDE /* Frameworks */,
+				725AA5BA1E05BF3A006E5DDE /* Resources */,
+				D2DB0B28616C3280A83203AD /* [CP] Embed Pods Frameworks */,
+				5F28ED56966804616466A5BC /* [CP] Copy Pods Resources */,
+				72DA736B1E09FF0B003F9262 /* Copy JuiceHelper */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Juice;
+			productName = Juice;
+			productReference = 725AA5BC1E05BF3A006E5DDE /* Juice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		72DA73591E09FE19003F9262 /* JuiceHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72DA73661E09FE19003F9262 /* Build configuration list for PBXNativeTarget "JuiceHelper" */;
+			buildPhases = (
+				72DA73561E09FE19003F9262 /* Sources */,
+				72DA73571E09FE19003F9262 /* Frameworks */,
+				72DA73581E09FE19003F9262 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JuiceHelper;
+			productName = JuiceHelper;
+			productReference = 72DA735A1E09FE19003F9262 /* JuiceHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		725AA5B41E05BF3A006E5DDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Brian Michel";
+				TargetAttributes = {
+					725AA5BB1E05BF3A006E5DDE = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = YN24FFRTC8;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					72DA73591E09FE19003F9262 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = YN24FFRTC8;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 725AA5B71E05BF3A006E5DDE /* Build configuration list for PBXProject "Juice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 725AA5B31E05BF3A006E5DDE;
+			productRefGroup = 725AA5BD1E05BF3A006E5DDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				725AA5BB1E05BF3A006E5DDE /* Juice */,
+				72DA73591E09FE19003F9262 /* JuiceHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		725AA5BA1E05BF3A006E5DDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7230D7551E05E8C70001F3E9 /* GeneralPreferencesViewController.xib in Resources */,
+				725AA5E61E05DE22006E5DDE /* PreferencesWindowController.xib in Resources */,
+				725AA5C21E05BF3A006E5DDE /* Assets.xcassets in Resources */,
+				728EB9441E06661800920B83 /* AboutPreferencesViewController.xib in Resources */,
+				725AA5C51E05BF3A006E5DDE /* MainMenu.xib in Resources */,
+				7230D75A1E05F4960001F3E9 /* CreditsPreferencesViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72DA73581E09FE19003F9262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DA735F1E09FE19003F9262 /* Assets.xcassets in Resources */,
+				72DA73621E09FE19003F9262 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C5858939BBC9D8F822F925E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F28ED56966804616466A5BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Juice/Pods-Juice-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2DB0B28616C3280A83203AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Juice/Pods-Juice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		725AA5B81E05BF3A006E5DDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				725AA5CE1E05C098006E5DDE /* PowerSource.swift in Sources */,
+				728EB9341E0605CB00920B83 /* FileManager+Extensions.swift in Sources */,
+				725AA5D51E05C1F5006E5DDE /* StatusBarItemCoordinator.swift in Sources */,
+				725AA5D01E05C0E8006E5DDE /* PowerSourceWatcher.swift in Sources */,
+				728EB92E1E0601D800920B83 /* ChargeScaleDisplay.swift in Sources */,
+				728EB9431E06661800920B83 /* AboutPreferencesViewController.swift in Sources */,
+				728EB9381E06184000920B83 /* FileBackedChargeScaleDisplay+Extensions.swift in Sources */,
+				725AA5C01E05BF3A006E5DDE /* AppDelegate.swift in Sources */,
+				725AA5D31E05C19A006E5DDE /* ApplicationCoordinator.swift in Sources */,
+				725AA5E01E05DBDB006E5DDE /* PreferencesCoordinator.swift in Sources */,
+				725AA5E51E05DE22006E5DDE /* PreferencesWindowController.swift in Sources */,
+				728EB93A1E061B4700920B83 /* PreferencesStorage.swift in Sources */,
+				725AA5DD1E05D3CD006E5DDE /* StatusItemMenu.swift in Sources */,
+				7230D7541E05E8C70001F3E9 /* GeneralPreferencesViewController.swift in Sources */,
+				72DA73691E09FED9003F9262 /* StartOnLaunchController.swift in Sources */,
+				728EB9361E060DA900920B83 /* FileBackedChargeScaleDisplay.swift in Sources */,
+				728EB9311E06033300920B83 /* PowerSource+Extensions.swift in Sources */,
+				7230D7591E05F4960001F3E9 /* CreditsPreferencesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72DA73561E09FE19003F9262 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DA736A1E09FED9003F9262 /* StartOnLaunchController.swift in Sources */,
+				72DA735D1E09FE19003F9262 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		725AA5C31E05BF3A006E5DDE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				725AA5C41E05BF3A006E5DDE /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		72DA73601E09FE19003F9262 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72DA73611E09FE19003F9262 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		725AA5C71E05BF3A006E5DDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		725AA5C81E05BF3A006E5DDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		725AA5CA1E05BF3A006E5DDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C77461788BEC6533AC87A19 /* Pods-Juice.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Juice/Juice.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 529;
+				DEVELOPMENT_TEAM = YN24FFRTC8;
+				INFOPLIST_FILE = Juice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.macos.Juice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		725AA5CB1E05BF3A006E5DDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77622EE75A5C033BF8EAACB4 /* Pods-Juice.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Juice/Juice.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 529;
+				DEVELOPMENT_TEAM = YN24FFRTC8;
+				INFOPLIST_FILE = Juice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.macos.Juice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		72DA73641E09FE19003F9262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JuiceHelper/JuiceHelper.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 529;
+				DEVELOPMENT_TEAM = YN24FFRTC8;
+				INFOPLIST_FILE = JuiceHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.macos.JuiceHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		72DA73651E09FE19003F9262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JuiceHelper/JuiceHelper.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 529;
+				DEVELOPMENT_TEAM = YN24FFRTC8;
+				INFOPLIST_FILE = JuiceHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.macos.JuiceHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		725AA5B71E05BF3A006E5DDE /* Build configuration list for PBXProject "Juice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				725AA5C71E05BF3A006E5DDE /* Debug */,
+				725AA5C81E05BF3A006E5DDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		725AA5C91E05BF3A006E5DDE /* Build configuration list for PBXNativeTarget "Juice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				725AA5CA1E05BF3A006E5DDE /* Debug */,
+				725AA5CB1E05BF3A006E5DDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72DA73661E09FE19003F9262 /* Build configuration list for PBXNativeTarget "JuiceHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72DA73641E09FE19003F9262 /* Debug */,
+				72DA73651E09FE19003F9262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 725AA5B41E05BF3A006E5DDE /* Project object */;
+}
